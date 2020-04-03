@@ -14,9 +14,9 @@ Dynamic GitLab pipeline configuration using Javascript
 * Validates output
 
 ## How it works
-GitLab has just released the ability for pipelines to generate a .gitlab-ci.yml file (https://gitlab.com/gitlab-org/gitlab/issues/35632) and to use it in a "triggered" pipeline, therefore opening the possibility to have dynamic jobs. This library will provides an easy API to generate that yml.
+GitLab has just released the ability for pipelines to generate a .gitlab-ci.yml file (https://gitlab.com/gitlab-org/gitlab/issues/35632) and to use it in a "triggered" pipeline, therefore opening the possibility to have dynamic jobs. This library provides an easy API to generate that yml.
 
-Your actual piplene is defined in `.gitlab-ci.js` (note the `.js` extension).
+Your actual pipeline is defined in `.gitlab-ci.js` (note the `.js` extension).
 This can be as simple as:
 
 ``` js
@@ -71,9 +71,9 @@ child-pipeline:
         job: generate-config
 ```
 
-# TODO:
+## TODO:
 - Create bin file to use as generator
-- Review possible API, based on current .gitlab-ci.yml
+- Define and implement possible API, based on current .gitlab-ci.yml standards
 - Examples of common tasks, like branch-based deployment targets
-- Test how generated yml actually work, create an example
+- Test how generated yml actually works, create an example
 - Support Async API
