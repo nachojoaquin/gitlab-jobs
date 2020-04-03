@@ -1,0 +1,17 @@
+{
+  "name": "gitlab-jobs",
+  "version": "0.0.1-alpha",
+  "description": "Dynamic GitLab pipeline configuration using Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "author": "Ignacio Cavina",
+  "license": "ISC",
+  "dependencies": {
+    "gitlab-ci-env": "^2.2.0",
+    "gitlab-ci-validate": "^0.3.0",
+    "node-fetch": "^2.6.0",
+    "yaml": "^1.8.3"
+  }
+}
